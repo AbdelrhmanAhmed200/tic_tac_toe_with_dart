@@ -49,6 +49,9 @@ void startGame(int size, int mode) {
       break;
     case 2:
       getPlayerMoveVsComputer();
+      if (movement == 9)
+      print("DRAW!");
+      playAgain();
       break;
     case 3:
       getPlayerMoveVsComputerHard();
